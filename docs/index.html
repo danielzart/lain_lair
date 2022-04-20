@@ -9,6 +9,9 @@ p{
 }
   </style>
   <body>
-    <p>Test... 4</p>
+    <p>Some pages protect themselves from the externally loaded javascript with the use of the meta tag http-equiv=Content-Security-Policy... returning an error if you create and inject a script tag with an external source.</p>
+    <p>Browsers support of meta http-equiv=Content-Security-Policy, meta tag via script must be issued BEFORE the content it controls is loaded, delete the meta tag via script does not delete its policy; changing the meta tag via script adds new policy filter</p>
+    <p>Trying to inject javascript like that generate an error like:</p>
+    <q>Content Security Policy: The page’s settings blocked the loading of a resource at https://foo/bar.js (“script-src”).</q>
   </body>
 </html>
